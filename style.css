@@ -81,9 +81,6 @@ html {
  
 }   
   /* Navbar Background Transition */
-  header {
-    background: #0000002d;
-  }
   
   header.scrolled {
     background: #222222; /* Blue background when scrolled */
