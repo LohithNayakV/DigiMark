@@ -35,7 +35,7 @@ DigiMark is a fully responsive website designed for a digital marketing agency. 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/DigiMark.git
+   git https://github.com/LohithNayakV/DigiMark.git
    ```
 2. Navigate to the project folder:
    ```sh
