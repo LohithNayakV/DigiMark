@@ -53,7 +53,7 @@ html {
   }
   /* Hero Section Background */
 .hero {
-    background-image: url('./assests/images/photo-1507679799987-c73779587ccf.jpeg'); /*Add your image URL here */
+    background-image: url('./assests/images/photo-1507679799987-c73779587ccf.jpeg');
     background-size: cover;
     background-position: center;
   }
@@ -63,11 +63,11 @@ html {
         align-items: center;
     }
     .hero {
-        min-height: 80vh; /* Adjust height for smaller screens */
+        min-height: 80vh;
     }
     
     .hero h2 {
-        font-size: 2rem; /* Reduce heading size */
+        font-size: 2rem;
     }
     
     .hero p {
@@ -75,7 +75,7 @@ html {
     }
     
     .hero a {
-        padding: 8px 16px; /* Adjust button size */
+        padding: 8px 16px; 
         font-size: 0.875rem;
     }
  
@@ -83,18 +83,17 @@ html {
   /* Navbar Background Transition */
   
   header.scrolled {
-    background: #222222; /* Blue background when scrolled */
+    background: #222222; 
   }
   
   
- /* Initially hide elements */
+
 .animate-hidden {
     opacity: 0;
-    transform: translateY(50px); /* Start slightly below */
+    transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* When in view, make them visible */
 .animate-show {
     opacity: 1;
     transform: translateY(0);
