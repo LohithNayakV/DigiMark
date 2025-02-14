@@ -1,3 +1,4 @@
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -12,20 +13,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+const mobileMenuButton = document.getElementById("mobile-menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
 
-// Mobile menu toggle
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-
-mobileMenuButton.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
+mobileMenuButton.addEventListener("click", () => {
+  if (mobileMenu.classList.contains("-translate-y-full")) {
+    mobileMenu.classList.remove("-translate-y-full");
+    mobileMenu.classList.add("translate-y-0");
+  } else {
+    mobileMenu.classList.remove("translate-y-0");
+    mobileMenu.classList.add("-translate-y-full");
+  }
 });
 
-// Close mobile menu when a link is clicked
-document.querySelectorAll('#mobile-menu a').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('active');
-  });
+// Close menu when clicking outside
+document.addEventListener("click", (event) => {
+  if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+    mobileMenu.classList.add("-translate-y-full");
+    mobileMenu.classList.remove("translate-y-0");
+  }
 });
 
 // Navbar background change on scroll

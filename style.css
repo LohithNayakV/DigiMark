@@ -86,24 +86,6 @@ html {
     background: #222222; /* Blue background when scrolled */
   }
   
-  /* Mobile Menu Styles */
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    background: rgba(37, 99, 235, 0.9); /* Semi-transparent blue */
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    padding: 1rem;
-    z-index: 1000;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .mobile-menu.active {
-    display: flex;
-    transform: translateY(0);
-  }
   
  /* Initially hide elements */
 .animate-hidden {
@@ -118,11 +100,6 @@ html {
     transform: translateY(0);
 }
 
-
-
-/*-----------------------------------*\
-  #PROJECT
-\*-----------------------------------*/
 
 .project .section-text { margin-block: 5px 35px; }
 
